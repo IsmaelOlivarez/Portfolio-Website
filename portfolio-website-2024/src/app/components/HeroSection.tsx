@@ -16,15 +16,33 @@ export const HeroSection = () => {
                 bg-[rgba(255,255,255,0.25)] rounded-[42.1] 
                 lg:h-[670] lg:w-[1320px] mx-auto">
 
-                <section className='grid lg:grid-cols-12 lg:gap-[32] lg:m-[96]'>
-                    <div className='col-span-4 bg-black h-[335px]'>
+                <section className='grid lg:grid-cols-12 lg:gap-[32] lg:mb-[45] lg:ml-[64] lg:mt-[64] lg:mr-[32]'>
+
+                    <div className='col-span-4 bg-[#5E548E] h-[123px] w-[375] rounded-[40]'>
+                        Hi! I am
                     </div>
-                    
-                </section>
-                <section className='grid lg:grid-cols-12 lg:gap-[32] lg:m-[96]'>
-                    <div className='col-span-4 bg-black h-[335px]'>
+
+                    <div className='col-span-8 bg-red-500 h-[267] mr-[32] rounded-[40]'>
+                        Ismael
                     </div>
+
                 </section>
+                
+                <section className='absolute lg:top-[232] grid lg:grid-cols-12  lg:gap-[32] lg:mb-[96] lg:ml-[64] lg: lg:mr-[32]'>
+
+                    <div className='col-span-4 bg-black h-[375] w-[375] rounded-full'>
+                    </div>
+
+                    <div className='col-span-5 bg-green-500 h-[240] rounded-[40] relative top-[135]'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud asd.
+                    </div>
+
+                    <div className='col-span-3 bg-yellow-500 h-[50] relative top-[135]'></div>
+
+
+                </section>
+
                 
                 {/* <section className='col-span-2 bg-black grid lg:grid-rows-12 lg:gap-[32] lg:m-[96]'>
                     <div className='row-span-3 w-[300] h-[300] bg-white absolute top-[30]'></div>
