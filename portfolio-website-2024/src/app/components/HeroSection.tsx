@@ -25,10 +25,10 @@ export const HeroSection = () => {
                     <div className='col-span-8 bg-red-500 h-[267] mr-[32] rounded-[40]'>
                         Ismael
                     </div>
-
                 </section>
                 
-                <section className='absolute lg:top-[232] grid lg:grid-cols-12  lg:gap-[32] lg:mb-[96] lg:ml-[64] lg: lg:mr-[32]'>
+                <section className='absolute lg:top-[232] grid lg:grid-cols-12  lg:gap-[32] 
+                    lg:mb-[96] lg:ml-[64] lg:mr-[32]'>
 
                     <div className='col-span-4 bg-black h-[375] w-[375] rounded-full'>
                     </div>
@@ -38,7 +38,20 @@ export const HeroSection = () => {
                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud asd.
                     </div>
 
-                    <div className='col-span-3 bg-yellow-500 h-[50] relative top-[135]'></div>
+                    <section className='col-span-3 space-y-[12px]'>
+                        <div className='bg-yellow-500 h-[72] relative top-[135] mr-[32] rounded-full'>
+                            <button>Hire Me!</button>
+                        </div>
+                        <div className='bg-yellow-500 h-[72] relative top-[135] mr-[32] rounded-full'>
+                            <button>Resume!</button>
+                        </div>
+                        <div className='bg-yellow-500 h-[72] relative top-[135] mr-[32] rounded-full'>
+                            <button>Projects!</button>
+                        </div>
+                    </section>
+
+                    
+
 
 
                 </section>
