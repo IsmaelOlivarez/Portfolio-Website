@@ -1,5 +1,30 @@
+"use client"
 import React from 'react'
 import Image from 'next/image';
+import { TypeAnimation } from 'react-type-animation';
+
+const ExampleComponent = () => {
+    return (
+      <TypeAnimation
+        sequence={[
+          // Same substring at the start will only be typed out once, initially
+          'Ismael',
+          1000, // wait 1s before replacing "Mice" with "Hamsters"
+          'a Software Engineer',
+          1000,
+          'a Web Developer',
+          1000,
+          'a Problem Solver',
+          1000
+        ]}
+        wrapper="span"
+        speed={50}
+        style={{ fontSize: '2em', display: 'inline-block' }}
+        repeat={Infinity}
+      />
+    );
+  };
+
 
 //raface creates a functional component automatically
 
@@ -18,23 +43,46 @@ export const HeroSection = () => {
 
                 <section className='grid lg:grid-cols-12 lg:gap-[32] lg:mb-[45] lg:ml-[64] lg:mt-[64] lg:mr-[32]'>
 
-                      <div className='col-span-4 bg-transparent h-[123px] w-[375] rounded-[40]'>
-                          <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 text-4xl lg:text-[72px] font-sans font-bold'>
+                      <div className='col-span-4 bg-transparent h-[123px] w-[375] rounded-[40] mt-[0]'>
+                          <h1 className='text-transparent h-[130] bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 
+                            lg:text-[64px] font-sans font-bold -mt-[0] ml-[80]'>
                               Hello, I'm
-                          </span>
+                          </h1>
                       </div>
 
-                    <div className='col-span-8 bg-red-500 h-[116] mr-[32] rounded-[40]'>
-                        <h1 className='text-[128px] text-white -mt-[64] font-sans'>Ismael</h1>
-                    </div>
+                      <div className='col-span-8 bg-transparent h-[116] mr-[0] ml-[0] rounded-[40]'>
+                          <h1 className='text-[44px] text-white -mt-[29] font-sans font-semibold'>
+                              <TypeAnimation
+                                  sequence={[
+                                      // Same substring at the start will only be typed out once, initially
+                                      'Ismael',
+                                      1000, // wait 1s before replacing "Mice" with "Hamsters"
+                                      'a Software Engineer',
+                                      1000,
+                                      'a Web Developer',
+                                      1000,
+                                      'a Problem Solver',
+                                      1000
+                                  ]}
+                                  wrapper="span"
+                                  speed={50}
+                                  style={{ fontSize: '2em', display: 'inline-block' }}
+                                  repeat={Infinity}
+                              />
+                          </h1>
+                      </div>
 
                     <div className='col-span-4 bg-transparent h-[133.5] mr-[32] rounded-[40]'>
                     </div>
 
-                    <div className='col-span-8 bg-red-500 h-[116] mr-[32] rounded-[40]'>
-                    </div>
-                </section>
-                
+                      <div className='col-span-8 bg-red-500 h-[116] mr-[32] rounded-[40]'>
+                          <h1 className='text-[#ADB7BE] text-lg lg:text-xl'>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud asd.
+                          </h1>
+                      </div>
+                  </section>
+
                 <section className='absolute lg:top-[232] grid lg:grid-cols-12  lg:gap-[32] 
                     lg:mb-[96] lg:ml-[64] lg:mr-[32]'>
 
