@@ -43,14 +43,14 @@ export const HeroSection = () => {
 
                 <section className='grid lg:grid-cols-12 lg:gap-[32] lg:mb-[45] lg:ml-[64] lg:mt-[64] lg:mr-[32]'>
 
-                      <div className='col-span-4 bg-transparent h-[123px] w-[375] rounded-[40] mt-[0]'>
-                          <h1 className='text-transparent h-[130] bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 
-                            lg:text-[64px] font-sans font-bold -mt-[0] ml-[80]'>
+                      <div className='col-span-4 bg-transparent h-[123px] w-[475] rounded-[40] mt-[0]'>
+                          <h1 className='text-transparent antialiased h-[130] bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 
+                            lg:text-[64px] font-sans font-[700] -mt-[0] ml-[96] '>
                               Hello, I'm
                           </h1>
                       </div>
 
-                      <div className='col-span-8 bg-transparent h-[116] mr-[0] ml-[0] rounded-[40]'>
+                      <div className='col-span-8 bg-transparent h-[116] w-[900] mr-[0] ml-[0] rounded-[40]'>
                           <h1 className='text-[44px] text-white -mt-[29] font-sans font-semibold'>
                               <TypeAnimation
                                   sequence={[
@@ -75,34 +75,44 @@ export const HeroSection = () => {
                     <div className='col-span-4 bg-transparent h-[133.5] mr-[32] rounded-[40]'>
                     </div>
 
-                      <div className='col-span-8 bg-red-500 h-[116] mr-[32] rounded-[40]'>
-                          <h1 className='text-[#ADB7BE] text-lg lg:text-xl'>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud asd.
-                          </h1>
-                      </div>
-                  </section>
+                    <div className='col-span-8 bg-transparent h-[116] mr-[48] ml-[32] rounded-[40] -mt-[32]'>
+                        <h1 className='text-[#aecde2] text-lg lg:text-xl'>
+                            My mission is to help the community that supportted me throuhgout my journey, 
+                            ultimately giving back. (This is just Place Holder Text)  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud asd. Lorem ipsum dolor sit amet, consectetur adipiscing elit. END OF TEXT
+                        </h1>
+                    </div>
+                </section>
+                
+                <section className='absolute bg-transparent lg:top-[232] grid lg:grid-cols-12  lg:gap-[32] 
+                    lg:mb-[96] lg:ml-[64] lg:mr-[32] mt-[106]'>
 
-                <section className='absolute lg:top-[232] grid lg:grid-cols-12  lg:gap-[32] 
-                    lg:mb-[96] lg:ml-[64] lg:mr-[32]'>
-
-                    <div className='col-span-4 bg-black h-[375] w-[375] rounded-full'>
+                    <div className='col-span-4 bg-black h-[375] w-[375] rounded-full -mt-[130] overflow-hidden relative'>
+                        <Image src='/images/horsetemp.jpg'
+                            alt='hero image'
+                            className='rounded-full absolute transform lg:top-[220] lg:left-1/2
+                        -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:w-[396]'
+                            width={220}
+                            height={220}></Image>
                     </div>
                     
 
-                    <div className='col-span-5 bg-green-500 h-[240] rounded-[40] relative top-[135]
-                        '>
+                    <div className='col-span-5 bg-transparent h-[240] rounded-[40] ml-[32] relative top-[39]'>
                     
-                        <h1 className='text-[#ADB7BE] text-lg lg:text-xl'>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                        <h1 className='text-[#ADB7BE] text-lg lg:text-xl -mt-[16]'>
+                            [MORE PLACEHOLDER TEXT! EITHER have this as intro to who I am and my story or talk about what I wish to achieve]Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                         ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud asd.
                         </h1>
+                        <h1 className='text-[#606174] text-lg lg:text-xl mt-[22]'>
+                            Contact me whenever :) and sign up to my newsletter! I post updates on what I am applying to!
+                        </h1>
+
                     
                     </div>
 
-                    <section className='col-span-3 space-y-[12px]'>
+                    <section className='col-span-3 space-y-[12px] mt-[29] bg-transparent'>
 
-                          <div className='h-[72] relative top-[135] mr-[32] rounded-full'>
+                          <div className='h-[72] relative top-[0] mr-[32] rounded-full'>
 
                               <button className='h-[72] w-full rounded-full bg-gradient-to-br from-purple-500 to-[#A23962] hover:bg-slate-200 text-white text-xl'>
                                   Hire Me
@@ -110,7 +120,7 @@ export const HeroSection = () => {
 
                           </div>
 
-                          <div className='h-[72] relative top-[135] mr-[32] rounded-full'>
+                          <div className='h-[72] relative top-[0] mr-[32] rounded-full'>
 
                               <button className='h-[72] w-full rounded-full bg-gradient-to-br from-purple-500 to-[#A23962] hover:bg-slate-200 text-white text-xl'>
                                   Projects
@@ -118,7 +128,7 @@ export const HeroSection = () => {
 
                           </div>
 
-                          <div className=' h-[72] relative top-[135] mr-[32] rounded-full'>
+                          <div className=' h-[72] relative top-[0] mr-[32] rounded-full'>
                               <button className='px-1 py-1 w-full rounded-full bg-gradient-to-br from-blue-500 to-pink-500 hover:bg-slate-800
                                  text-white text-xl'>
                                   <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-4'>Download CV</span>
