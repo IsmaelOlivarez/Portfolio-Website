@@ -87,17 +87,19 @@ export const HeroSection = () => {
                 <section className='absolute bg-transparent lg:top-[232] grid lg:grid-cols-12  lg:gap-[32] 
                     lg:mb-[96] lg:ml-[64] lg:mr-[32] mt-[106]'>
 
-                    <div className='col-span-4 bg-black h-[375] w-[375] rounded-full -mt-[130] overflow-hidden relative'>
-                        <Image src='/images/horsetemp.jpg'
-                            alt='hero image'
-                            className='rounded-full absolute transform lg:top-[220] lg:left-1/2
+                      <div className='col-span-4 bg-transparent h-[375] w-[375] rounded-full -mt-[130] overflow-hidden relative'>
+                          <Image src='/images/horsetemp.jpg'
+                              alt='hero image'
+                              className='rounded-full absolute transform lg:top-[220] lg:left-1/2
                         -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:w-[396]'
-                            width={220}
-                            height={220}></Image>
-                    </div>
-                    
+                              width={220}
+                              height={220}>
+                            
+                            </Image>
+                      </div>
 
-                    <div className='col-span-5 bg-transparent h-[240] rounded-[40] ml-[32] relative top-[39]'>
+
+                      <div className='col-span-5 bg-transparent h-[240] rounded-[40] ml-[32] relative top-[39]'>
                     
                         <h1 className='text-[#ADB7BE] text-lg lg:text-xl -mt-[16]'>
                             [MORE PLACEHOLDER TEXT! EITHER have this as intro to who I am and my story or talk about what I wish to achieve]Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
