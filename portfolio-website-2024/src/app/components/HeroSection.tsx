@@ -35,7 +35,7 @@ export const HeroSection = () => {
         <div className='grid grid-col-1 lg:grid grid-col-12'></div>
 
         <div className="grid grid-cols-1 
-            lg:grid-cols-12 gap-[32] m-[96]">
+            lg:grid-cols-12 gap-[32] ml-[96] mt-[0] mb-[96] mr-[96]">
             
             <div className="col-span-12 h-[1340px] w-auto relative
                 bg-[rgb(36,36,36)] rounded-[42.1] 
@@ -98,14 +98,13 @@ export const HeroSection = () => {
                             </Image>
                       </div>
 
-
-                      <div className='col-span-5 bg-transparent h-[240] rounded-[40] ml-[32] relative top-[39]'>
+                      <div className='col-span-5 bg-transparent h-[240] rounded-[40] ml-[32] relative top-[30]'>
                     
-                        <h1 className='text-[#ADB7BE] text-lg lg:text-xl -mt-[16]'>
+                        <h1 className='text-[#ADB7BE] text-lg lg:text-xl -mt-[9]'>
                             [MORE PLACEHOLDER TEXT! EITHER have this as intro to who I am and my story or talk about what I wish to achieve]Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                         ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud asd.
                         </h1>
-                        <h1 className='text-[#606174] text-lg lg:text-xl mt-[22]'>
+                        <h1 className='text-[#606174] text-lg lg:text-xl mt-[25]'>
                             Contact me whenever :) and sign up to my newsletter! I post updates on what I am applying to!
                         </h1>
 
